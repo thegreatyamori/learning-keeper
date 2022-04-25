@@ -1,1 +1,15 @@
-<p>appbar works!</p>
+<header class="flex justify-between items-center">
+  <h6 id="title" class="text-secondary dark:text-secondary-dark">title</h6>
+
+  <div class="flex space-x-1">
+    <div id="failure-icon" class="hidden">
+      <img src="assets/icons/failure.svg" alt="failure_icon">
+    </div>
+
+    <div id="success-icon" class="hidden">
+      <img src="assets/icons/success.svg" alt="success_icon">
+    </div>
+
+    <app-group-buttons></app-group-buttons>
+  </div>
+</header>
