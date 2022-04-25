@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-group-buttons',
   templateUrl: './group-buttons.component.html',
-  styleUrls: ['./group-buttons.component.sass']
+  styles: []
 })
 export class GroupButtonsComponent implements OnInit {
 
