@@ -11,6 +11,7 @@ module.exports = function (config) {
       require("karma-jasmine-html-reporter"),
       require("karma-coverage"),
       require("@angular-devkit/build-angular/plugins/karma"),
+      require("@chiragrupani/karma-chromium-edge-launcher"),
     ],
     client: {
       jasmine: {
@@ -34,7 +35,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["Chrome", "ChromeHeadlessCI"],
+    browsers: ["Chrome", "ChromeHeadlessCI", "Edge"],
     customLaunchers: {
       ChromeHeadlessCI: {
         base: "ChromeHeadless",
