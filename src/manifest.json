@@ -1,0 +1,17 @@
+{
+  "name": "Learning Keeper",
+  "version": "1.0.0",
+  "description": "You can take notes, which includes text, and links.",
+  "manifest_version": 3,
+  "browser_action": {
+    "default_icon": {
+      "19": "assets/icons/success.svg",
+      "38": "assets/icons/success.svg"
+    },
+    "default_popup": "index.html",
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ]
+  }
+}
