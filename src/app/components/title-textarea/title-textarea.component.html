@@ -1,7 +1,11 @@
-<textarea
-  rows="2"
-  name="title"
-  class="textarea-title placeholder-light-25 dark:placeholder-dark-25"
-  required
-  autofocus
-></textarea>
+<ng-container>
+  <textarea
+    rows="2"
+    name="title"
+    class="textarea-title placeholder-light-25 dark:placeholder-dark-25"
+    required
+    autofocus
+    #textarea_title
+    (change)="handleValue($event)"
+  >{{ title }}</textarea>
+</ng-container>
