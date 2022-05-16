@@ -40,7 +40,8 @@ describe('TitleTextareaComponent', () => {
     fixture.detectChanges()
 
     fixture.whenStable().then(() => {
-      expect(component.title).toEqual('hello world.');
+      expect(component.title).toEqual('');
+      expect(textarea.value).toEqual('hello world.');
     })
   });
 
