@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-save-button',
   templateUrl: './save-button.component.html',
-  styleUrls: ['./save-button.component.sass']
+  styles: []
 })
 export class SaveButtonComponent implements OnInit {
 

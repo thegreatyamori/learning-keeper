@@ -10,6 +10,7 @@ import { GroupLinkInputsComponent } from './components/group-link-inputs/group-l
 import { ActionButtonComponent } from './components/action-button/action-button.component';
 import { SaveButtonComponent } from './components/save-button/save-button.component';
 import { CollapseButtonComponent } from './components/collapse-button/collapse-button.component';
+import { FormWrapperComponent } from './components/form-wrapper/form-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CollapseButtonComponent } from './components/collapse-button/collapse-b
     ActionButtonComponent,
     SaveButtonComponent,
     CollapseButtonComponent,
+    FormWrapperComponent,
   ],
   imports: [BrowserModule],
   providers: [],
