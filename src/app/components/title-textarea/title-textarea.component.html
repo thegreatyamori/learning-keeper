@@ -1,7 +1,13 @@
-<textarea
-  rows="2"
-  name="title"
-  class="textarea-title placeholder-light-25 dark:placeholder-dark-25"
-  required
-  autofocus
-></textarea>
+<ng-container>
+  <textarea
+    rows="2"
+    name="title"
+    class="textarea-title w-full placeholder-light-25 dark:placeholder-dark-25 border-2 border-black rounded"
+    placeholder="Ingresa el título..."
+    required
+    autofocus
+    #textarea_title
+    (change)="handleValue($event)"
+    invalidBorder
+  >{{ title }}</textarea>
+</ng-container>

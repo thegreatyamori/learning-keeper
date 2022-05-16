@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { validateSentence } from 'src/app/utils/validate-textarea';
 
 @Component({
   selector: 'app-title-textarea',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class TitleTextareaComponent implements OnInit {
+  title: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
+  handleValue(evt: Event): void {
+    const isValidSentence = validateSentence(evt);
+
+    if (!isValidSentence) {
+      throw "Not valid text !";
+    }
+    console.log(isValidSentence)
+  }
 }

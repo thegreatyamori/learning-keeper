@@ -11,6 +11,7 @@ import { ActionButtonComponent } from './components/action-button/action-button.
 import { SaveButtonComponent } from './components/save-button/save-button.component';
 import { CollapseButtonComponent } from './components/collapse-button/collapse-button.component';
 import { FormWrapperComponent } from './components/form-wrapper/form-wrapper.component';
+import { InvalidBorderDirective } from './directives/invalid-border.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormWrapperComponent } from './components/form-wrapper/form-wrapper.com
     SaveButtonComponent,
     CollapseButtonComponent,
     FormWrapperComponent,
+    InvalidBorderDirective,
   ],
   imports: [BrowserModule],
   providers: [],
